@@ -12,9 +12,13 @@ searchButton.addEventListener('click', onButton);
 
 function onButton(){
     let showValue= searchInput.value;
-    if (showValue==='google') alert('Yandex круче. Но это не точно');
+    if (showValue==='') alert ("Введите что-нибудь в поисковую строку и нажмите 'Найти'")
+    else{
+        if (showValue==='google') alert('Yandex круче. Но это не точно');
     else alert(showValue);
     alert (showFirstProperty);
+    }
+    
 }
 
 
@@ -23,11 +27,15 @@ function onButton(){
 searchButtonThree.addEventListener('click', onButtonThree);
 
 function onButtonThree(){
-    setTimeout(function (){
-        let showValue= searchInputThree.value;
-    if (showValue==='google') alert('Yandex круче. Но это не точно');
-    else alert(showValue);
+    let showValue= searchInputThree.value;
+    if (showValue==='') alert ("Введите что-нибудь в поисковую строку и нажмите 'Найти'")
+    else{
+         setTimeout(function (){
+            if (showValue==='google') alert('Yandex круче. Но это не точно');
+                else alert(showValue);
     },3000)
+    }
+   
 }
 
 
