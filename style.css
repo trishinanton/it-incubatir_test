@@ -1,0 +1,30 @@
+.wrapper{
+    text-align: center;
+}
+.input{
+    width: 50%;
+    height: 30px;
+    margin-top: 20vh;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    outline: none;
+    transition-duration: .2s;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 40px;
+}
+.input:hover{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+.search-button{
+    border-radius: 40px;
+    height: 35px;
+    background-color: #bae5c6;
+    transition-duration: .4s;
+    border-color: #64fabb;
+    border-width: 1px;
+}
+.search-button:hover{
+    background-color: #58fcb8;
+    cursor: pointer;
+}
